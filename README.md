@@ -82,12 +82,12 @@ This works even for classes that can't be linked
 
 
 
-#https://blog.csdn.net/Airths/article/details/121379091
+# https://blog.csdn.net/Airths/article/details/121379091
 
-Hook 对象方法（CHMethod + CHHook）
-Hook 对象方法（CHDeclareMethod）
-CHMethod 与 CHDeclareMethod 的区别
-Hook 类方法（CHClassMethod + CHClassHook）
-Hook 类方法（CHDeclareClassMethod）
-CHClassMethod 与 CHDeclareClassMethod 的区别
+Hook 对象方法（CHMethod + CHHook）  
+Hook 对象方法（CHDeclareMethod）  
+CHMethod 与 CHDeclareMethod 的区别  
+Hook 类方法（CHClassMethod + CHClassHook）  
+Hook 类方法（CHDeclareClassMethod）  
+CHClassMethod 与 CHDeclareClassMethod 的区别  
 
