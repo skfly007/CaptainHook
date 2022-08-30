@@ -1,16 +1,16 @@
 # CaptainHook
 Common hooking/monkey patching headers for Objective-C on Mac OS X and iPhone OS. MIT licensed
 
-h1. Introduction to CaptainHook
+# Introduction to CaptainHook
 
 CaptainHook is a generic hooking framework for the Objective-C 2.0 runtime designed to make hooking methods simple.
 
-h2. Basic Setup
+## Basic Setup
 
 <pre><code>#import <CaptainHook/CaptainHook.h></code></pre>
 Initializes CaptainHook so the fun can begin.
 
-h2. Declaring Classes
+## Declaring Classes
 
 Classes must be declared and loaded before they can be used with CaptainHook. *CHConstructor* blocks denote code that will be run as soon as the binary is loaded.
 
@@ -20,9 +20,9 @@ CHConstructor {
   CHLoadLateClass(NSString);
 }</code></pre>
 
-h2. Method Hooking
+## Method Hooking
 
-h3. Standard Method
+### Standard Method
 
 Methods are hooked by first declaring a method using *CHMethod*, and then registering it in a constructor using *CHHook*:
 
@@ -40,7 +40,7 @@ CHConstructor
     CHHook(2, NSString, writeToFile, atomically);
 }</code></pre>
 
-h3. Simpler Method
+### Simpler Method
 
 A simpler syntax may be used, but it is slightly less efficient and offers no control over when the hooks get registered:
 
@@ -52,7 +52,7 @@ CHDeclareMethod(2, void, NSString, writeToFile, NSString *, path, atomically, BO
     CHSuper(2, NSString, writeToFile, path, atomically, flag);
 }</code></pre>
 
-h2. New Classes at Runtime
+## New Classes at Runtime
 
 New Classes may be created at runtime by using the *CHRegisterClass* macro:
 
